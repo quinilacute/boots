@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Minimal custom styling */
+    body {
+      background-color: #4B0082;
+      color: #FFFFFF;
+    }
+    a {
+      color: #C0C0FF;
+      text-decoration: none;
+    }
+    button {
+      background-color: #708090;
+      color: #4B0082;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    }
+    button:hover {
+      background-color: #C0C0FF; 
+      color: #4B0082; 
+      transform: scale(1.05); /* Slightly enlarge the button */
+    }
+    .purple-text {
+      color: #4B0082; 
+    }
+    .custom-profile-img {
+      height: 150px;
+      border: 5px solid #4B0082;
+      border-radius: 50%;
+      max-width: 120%;
+      padding: 15px; 
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="text-dark fw-bold">MyLogo</div>
+      <nav class="navbar navbar-expand">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item me-3"><a class="nav-link text-light" href="#">Home</a></li>
+          <li class="nav-item me-3"><a class="nav-link text-light" href="#">About</a></li>
+          <li class="nav-item me-3"><a class="nav-link text-light" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <hr class="bg-white" style="height: 5px;">
+
+  <!-- Hero Section -->
+  <section class="text-center py-5">
+    <div class="container">
+      <h1>Hello, I'm Peace</h1>
+      <p class="lead">A Web Developer passionate about creating awesome projects.</p>
+      <button class="btn btn-secondary">Hire Me</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="container text-center py-5 bg-dark">
+    <div class="row align-items-center">
+      <div class="col-md-4">
+        <img src="profile.jpg" alt="Profile Image" class="img-fluid custom-profile-img">
+      </div>
+      <div class="col-md-8 text-light">
+        <h2>About Me</h2>
+        <p>I specialize in building user-friendly websites using HTML, CSS, and JavaScript.<br> Let’s collaborate and create something amazing together!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="text-center py-5">
+    <div class="container">
+      <h2 class="mb-4">My Projects</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card bg-secondary text-light">
+            <div class="card-body">
+              Project 1
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-secondary text-light">
+            <div class="card-body">
+              Project 2
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-secondary text-light">
+            <div class="card-body">
+              Project 3
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-secondary text-light">
+            <div class="card-body">
+              Project 4
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="bg-white" style="height: 5px;">
+
+  <!-- Contact Section -->
+  <section class="text-center py-5">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="mx-auto" style="max-width: 500px;">
+        <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+        <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+        <textarea class="form-control mb-3" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn btn-dark purple-text">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer bg-secondary text-white py-3">
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+      <p class="mb-3">© 2024 Peace Isuaiko. All rights reserved.</p>
+      <div class="socials d-flex gap-2">
+        <a href="https://x.com/isuaiko2943" class="btn" style="background-color: #4B0082; color: #FFFFFF;">Twitter</a>
+        <a href="https://www.linkedin.com/in/peace-isuaiko-363663295" class="btn" style="background-color: #4B0082; color: #FFFFFF;">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
